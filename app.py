@@ -6,7 +6,6 @@ Run with: streamlit run app.py
 
 import os
 import streamlit as st
-
 import config
 import ingest
 
@@ -26,6 +25,10 @@ if "history" not in st.session_state:
     st.session_state.history = []  # list of {"user", "assistant", "sources", "used_web_fallback"}
 if "index_data" not in st.session_state:
     st.session_state.index_data = ingest.load_index()  # (faiss_index, metadata, bm25) or None
+
+
+
+
 
 # ==================== Sidebar: knowledge base management ====================
 
@@ -75,6 +78,10 @@ if st.session_state.index_data:
 if st.sidebar.button("🗑️ Clear conversation", use_container_width=True):
     st.session_state.history = []
     st.rerun()
+
+
+
+
 
 # ==================== Main chat area ====================
 

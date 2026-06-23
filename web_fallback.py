@@ -13,7 +13,6 @@ can run this file directly for quick manual checks.
 
 from typing import List, Dict, Optional
 import logging
-
 import config
 
 logger = logging.getLogger(__name__)

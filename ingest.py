@@ -10,14 +10,12 @@ import os
 import csv
 import pickle
 import logging
-
 import numpy as np
 import faiss
 from sentence_transformers import SentenceTransformer
 from rank_bm25 import BM25Okapi
 from pypdf import PdfReader
 import docx
-
 import config
 
 logger = logging.getLogger("rag_ingest")
@@ -66,7 +64,7 @@ LOADERS = {
 }
 
 
-def load_document(path):
+def load_document(path): 
     ext = os.path.splitext(path)[1].lower()
     if ext not in LOADERS:
         raise ValueError(f"Unsupported file type: {ext}")

@@ -1,4 +1,4 @@
-- cretea nea repo on github.com
+- cretea new repo on github.com
 - Clone from VS code - source control >> clone on any folder
 - Now cretae README file and push try
 
@@ -12,7 +12,7 @@ Before push change the .venv using below commands
 - (RAGApp) PS C:\AI Projects\RAGApp> now venv created
 
 Add .enve file and Requirements.txt
-- (RAGApp) PS C:\AI Projects\RAGApp> uv pip install -r .\Requirements.txt
+- (RAGApp) PS C:\AI Projects\RAGApp> uv pip install -r .\requirements.txt
 
 
 Add all the required project files

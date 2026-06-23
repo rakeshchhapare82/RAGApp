@@ -13,10 +13,8 @@ documents actually contain a good answer, or whether to fall back to the web.
 
 import math
 import logging
-
 import numpy as np
 from sentence_transformers import SentenceTransformer, CrossEncoder
-
 import config
 
 logger = logging.getLogger("rag_retriever")

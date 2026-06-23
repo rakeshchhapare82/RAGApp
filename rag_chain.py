@@ -15,7 +15,6 @@ Pipeline for every user turn:
 
 import logging
 from groq import Groq
-
 import config
 import retriever
 import web_fallback
