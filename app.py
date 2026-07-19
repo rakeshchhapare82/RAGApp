@@ -73,7 +73,7 @@ if st.session_state.index_data:
     _, metadata, _ = st.session_state.index_data
     sources = sorted(set(m["source"] for m in metadata))
     source_choice = st.sidebar.selectbox("Filter by document (optional)", ["All"] + sources)
-    source_filter = None if source_choice == "All" else source_choice
+    source_filter = None if source_choicel == "All" else source_choice
 
 if st.sidebar.button("🗑️ Clear conversation", use_container_width=True):
     st.session_state.history = []

@@ -14,7 +14,8 @@ Before push change the .venv using below commands
 Add .enve file and Requirements.txt
 - (RAGApp) PS C:\AI Projects\RAGApp> uv pip install -r .\requirements.txt
 
-
+-uv run streamlit run app.py ----run
+- Cntl + C exit
 Add all the required project files
 
 
